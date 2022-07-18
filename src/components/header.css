@@ -1,0 +1,102 @@
+.banner{
+    background-color: #f5f6fa;
+    display:flex;
+    justify-content: center;
+}
+
+
+.banner .image img{
+    height: 350px;
+    width:auto;
+}
+
+.banner .text{
+    margin-left:2rem;
+    margin-top:9rem;
+    font-size: 1.2rem;
+    font-family: 'Mingzat', sans-serif;
+}
+
+.banner .text p{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap:2rem;
+}
+.banner .buttons a{
+    text-decoration: none;
+    color:#00857F;
+    padding:10px;
+    border:2px solid #00857F;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.banner .buttons a:hover{
+    text-decoration: none;
+    background-color: #00857F;
+    color:white;
+    padding:10px;
+    border:2px solid #00857F;
+    border-radius: 12px;
+}
+
+/* ========== Media Quaries====*/
+@media screen and (max-width: 800px){
+    .banner .image img{
+        height: 250px;
+    }
+    .banner .text{
+        margin-top:4rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner .text{
+        margin-top:2rem;
+    }
+    .banner .text{
+        text-align: center;
+        margin-left: 0rem;
+        margin-top:0.7rem;
+        padding-left: 0rem;
+    }
+    .banner .text p{
+        font-size: 1.7rem;
+    }
+    .banner .buttons a{
+        font-size: 1.3rem;
+        min-width: max-content;
+    }
+    .banner .text .buttons{
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+
+    .buttons{
+        gap:1rem;
+    }
+    .banner .image img{
+        height: 140px;
+    }
+
+    .banner .image{
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .banner .image img{
+        height:200px
+    }
+}

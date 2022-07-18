@@ -1,0 +1,32 @@
+#about{
+    padding: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    background-color: #D6D5DF;
+    padding-bottom: 3rem;
+}
+#about h2{
+    color:#00857F;
+    text-align:center
+}
+
+@media screen and (max-width: 800px){
+    #about{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding:1.5rem;
+    }
+    #about h2{
+        padding:1.3rem;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    #about h2{
+        padding:1rem;
+    }
+}
+    
+

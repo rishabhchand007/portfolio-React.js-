@@ -1,0 +1,64 @@
+#experience{
+    background-color: #f5f6fa;
+    padding:2rem;
+    color:white;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    
+
+}
+
+#experience h2{
+    color:black;
+    text-align: center;
+}
+.skills{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:2rem;
+}
+.skill{
+    background: rgb(17,153,142);
+background: linear-gradient(60deg, rgba(17,153,142,1) 70%, rgba(56,239,125,1) 100%);
+    backdrop-filter: blur(15px);
+    max-width: 130px;
+    border-radius: 1rem ;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 3px 8px;
+    transition: transform .2s;
+}
+.skill:hover{
+    transform:scale(1.1);
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    color: rgb(240, 239, 239);
+}
+.icon{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 800px){
+    #experience{
+        padding:2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    
+    }
+
+    #experience h2{
+        padding: 1rem;
+    }
+    .skill:hover{
+        transform:none;
+    }
+}

@@ -1,0 +1,103 @@
+#projects{
+    background:linear-gradient(0deg, rgba(48, 48, 48, 0.3), rgba(53, 53, 53, 0.534)),  url("./images/back.jpg"); /* The image used */
+    height: 100%;
+    min-height:730px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: white;
+    
+
+}
+h2{
+    text-align: center;
+    padding:2rem
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;    
+
+}
+.projects .container img{
+    width:100%;
+    height: auto;
+    max-width: 480px;
+    min-width: 340px;
+    display: block;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 3px 8px;
+    object-fit: cover;
+    
+
+}
+
+
+.container{
+    background-color: #f5f6fa;
+    max-width: 480px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 3px 8px;
+    transition: all 2s;
+    margin:15px;
+}
+
+.description{
+    padding: 1rem;
+    color: black;
+}
+.buttons{
+    float: right;
+    margin: 1rem;
+}
+
+.buttons a{
+    font-size: 1.2rem;
+    color:white;
+    padding:8px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.buttons a:hover{
+    border:none;
+    text-decoration: none;
+    color:white;
+    padding:none;
+}
+button{
+    outline: inherit;
+    background: none;
+    border: none;
+    color:#000000d8;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:disabled{
+    color: rgba(0, 0, 0, 0.534)
+}
+
+#github{
+    background-color: #171515;
+}
+#liveview{
+    background-color: #9d2622;
+}
+
+@media screen and (max-width:600px) {
+    #projects{
+        min-height:530px;
+    }
+    #prev{
+        transform: translateX(2rem);
+    }
+    #next{
+        transform: translateX(-2rem);
+    }
+    
+}
